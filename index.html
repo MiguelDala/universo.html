@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #4e54c8;
+            --primary-color: #555cdd;
             --secondary-color: #1a1a2e;
             --accent-color: #8f94fb;
             --text-color: #ffffff;
@@ -282,6 +282,25 @@
             font-size: 1.2rem; /* Tamanho da fonte */
             color: #333; /* Cor do texto */
         }
+
+        .second-page {
+            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjc4bXBoaWxnZ2pkbGhpd2cybHFnZG51bmx6dDA2bHQ0Zjd4cXdkZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/n1dFDLwXu4Qkwy7OJ0/giphy.gif');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* Evita que o GIF se repita */
+            height: 100vh; /* Define a altura da página */
+            width: 100%; /* Define a largura da página */
+        }
+
+        .button-container {
+            background-image: url("https://media.giphy.com/media/35A1ZpBwJctGM/giphy.gif?cid=ecf05e47voinz038n0m4yjgudjvwqd34dfx6hp499mgk69ep&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+            background-size: cover;
+            padding: 20px; /* Ajuste o padding conforme necessário */
+            border-radius: 10px; /* Para bordas arredondadas */
+        }
+        h2{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -294,57 +313,48 @@
                 estão moldando o futuro. Uma jornada através da inovação, criatividade 
                 e possibilidades infinitas.
             </p>
-            <a href="#" class="cta-button" id="openModal">Tecnologia dos Computadores e dos Robôs</a>
+            <a href="/robo.html" class="cta-button" id="openModal">Tecnologia dos Computadores e dos Robôs</a>
             <div class="social-buttons">
                 <a href="https://www.instagram.com/miguel_dala23/" target="_blank" class="btn">Instagram</a>
                 <a href="https://github.com/MiguelDala" target="_blank" class="btn">GitHub</a>
-                <a href="https://www.youtube.com/watch?v=cpraXaw7dyc" target="_blank" class="btn">Conheça Mais</a>
+                <a href="https://cbvr.com.br/post/a-ascensao-das-maquinas-o-futuro-da-inteligencia-artificial-e-o-impacto-na-humanidade/" target="_blank" class="btn">Conheça Mais</a>
             </div>
         </div>
     </div>
 
-    <!-- Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-                                        <h2>Tecnologia dos Computadores e dos Robôs</h2>
-            <div class="card-container">
-                <div class="card">
-                    <img src="https://mgrgaming.com/wp-content/uploads/Half-Of-PlayStation-Releases-Will-Be-Mobile-And-PC-By-2025-2.jpg" alt="Computador" />
-                    <h3>Computadores</h3>
-                    <p>Os computadores são dispositivos eletrônicos que processam dados e executam programas. Eles são fundamentais em diversas áreas, desde a educação até a medicina.</p>
-                    <ul>
-                        <li>Os computadores são essenciais para a comunicação moderna</li>
-                        <li>Utilizados em pesquisas científicas e desenvolvimento tecnológico.</li>
-                        <li>Facilitam o acesso à informação e ao entretenimento.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <img src="https://pplware.sapo.pt/wp-content/uploads/2019/01/robos_emprego01-720x462.jpg" alt="Robô em ambiente de trabalho" />
-                    <h3>Robôs</h3>
-                    <p>Definições sobre robôs e automação:</p>
-                    <ul>
-                        <li>Robôs são máquinas programáveis que podem realizar tarefas automaticamente.</li>
-                        <li>São utilizados em diversas indústrias para aumentar a eficiência e reduzir custos.</li>
-                        <li>A automação robótica pode melhorar a precisão e a segurança no local de trabalho.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <h2>Conheça mais</h2>
+
+    <div style="text-align: center; margin: 20px auto;">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/cpraXaw7dyc" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
     </div>
+
+    <div class="container">
+
 
     <div class="contact-info">
         <p>nº +351 962 275 607</p>
         <p>Email: Miguelxiaquitangue@epfundao.edu.pt</p>
     </div>
 
+ 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         // Script para abrir e fechar o modal
         var modal = document.getElementById("myModal");
         var btn = document.getElementById("openModal");
+        var cardContainer = document.getElementById("cardContainer");
 
         btn.onclick = function() {
             modal.style.display = "block";
+            cardContainer.style.backgroundImage = "url('URL_DO_SEU_NOVO_GIF_AQUI')"; // Altera o fundo do card
         }
 
         window.onclick = function(event) {
@@ -360,7 +370,10 @@
                 shape: { type: "circle" },
                 opacity: {
                     value: 0.6,
-                    random: true
+                    
+
+                    
+
                 },
                 size: {
                     value: 3,
