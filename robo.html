@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnologia dos Computadores e dos Robôs</title>
+    <title>Tecnologia de Computação Quântica</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,44 +12,53 @@
             align-items: center;
             flex-direction: column;
             padding: 20px;
-            background-image: url("https://i.gifer.com/GYny.gif");
+            background-image: url("https://i.gifer.com/Nt6v.gif");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            margin: 0;
         }
-        .card-container {
-            display: flex;
-            justify-content: space-around;
-            width: 100%;
-            max-width: 1200px;
-            margin: 20px 0;
-        }
-        .card {
-            background: #261a68;
-            border-radius: 10px;
-            padding: 1rem;
-            width: 300px;
-            box-shadow: 0 4px 10px rgba(12, 38, 87, 0.979);
+        .container {
+           
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 254, 254, 0.1);
             text-align: center;
+            max-width: 800px;
+            width: 100%;
         }
-        img {
-            max-width: 100%;
-            border-radius: 10px;
+        h1 {
+            color: #fff9f9;
         }
         h2 {
-            background-image: url("https://i.gifer.com/Mr3W.gif");
-            background-size: cover;
-            padding: 15px 30px;
-            border-radius: 10px;
-            color: rgb(23, 53, 119);
+            color: #666;
+        }
+        button {
+            background-color: #007bff;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
-            text-shadow: 2px 2px 4px rgba(247, 243, 243, 0.5);
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: left;
+            color: #6a3c9e;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: rgba(53, 42, 116, 0.6); /* Fundo semitransparente */
         }
         .back-button {
             margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
-            color: rgb(231, 224, 224);
+           
             background-color: #007BFF;
             border: none;
             border-radius: 5px;
@@ -58,35 +67,83 @@
         .back-button:hover {
             background-color: #0056b3;
         }
+        .ibm-image {
+            margin-top: 20px;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
-
-    <h2>Tecnologia dos Computadores e dos Robôs</h2>
-    <div class="card-container">
-        <div class="card">
-            <img src="https://mgrgaming.com/wp-content/uploads/Half-Of-PlayStation-Releases-Will-Be-Mobile-And-PC-By-2025-2.jpg" alt="Computador" />
-            <h3>Computadores</h3>
-            <p>Os computadores são dispositivos eletrônicos que processam dados e executam programas. Eles são fundamentais em diversas áreas, desde a educação até a medicina.</p>
-            <ul>
-                <li>Os computadores são essenciais para a comunicação moderna</li>
-                <li>Utilizados em pesquisas científicas e desenvolvimento tecnológico.</li>
-                <li>Facilitam o acesso à informação e ao entretenimento.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <img src="https://pplware.sapo.pt/wp-content/uploads/2019/01/robos_emprego01-720x462.jpg" alt="Robô em ambiente de trabalho" />
-            <h3>Robôs</h3>
-            <p>Definições sobre robôs e automação:</p>
-            <ul>
-                <li>Robôs são máquinas programáveis que podem realizar tarefas automaticamente.</li>
-                <li>São utilizados em diversas indústrias para aumentar a eficiência e reduzir custos.</li>
-                <li>A automação robótica pode melhorar a precisão e a segurança no local de trabalho.</li>
-            </ul>
-        </div>
+   
     </div>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre a IBM</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #070707;
+                padding: 20px;
+                color: #4f25c2;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+              
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #0033cc;
+            }
+            h2 {
+                color: #003366;
+            }
+            p {
+                line-height: 1.6;
+            }
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            .highlight {
+                color: #003366;
+                font-weight: bold;
+            }
+            .quote {
+                font-style: italic;
+                color: #555;
+                margin: 20px 0;
+            }
+        </style>
+        
+        <div class="container">
+            <h1>IBM</h1>
+            <img src="  data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIsA4QMBIgACEQEDEQH/xAAcAAEBAQEBAAMBAAAAAAAAAAAABwYFBAIDCAH/xAA+EAABAwMBBAUICAYDAQAAAAAAAQIDBAURBgcSITETFkFWkRUXIlGS0dLTFCMyVVdhk5QzUlRicYFCseEk/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACcat2vWrS+oauzVVtrZpqbc3pIlZurvMa7hlf7jj+f2x/c9x8We8CvgkHn9sf3PcfFnvNWm0SgXQK6w+hVP0RH7nQZb0n8Tc9eOfEDaAkPn9sX3RcfFnvHn9sX3RcfFnvArwJD5/bF90XLxZ7zvaZ2vaWv1SyldNNb6h67rG1jUa16/k5FVPHAFAB9NZUNpKSepeiq2GN0ionaiJkk/n9sX3RcfFnvArwJD5/bF90XHxZ7zYaB1/bdcNrPoEE9PJSK3fjnxlUdnCphfyUDXAE/wBabWLPpK+OtNRSVVVOyNr5FgVuGK7ijVyvPGF/2gFABIfP7Yvui4+LPeeyz7bbNdrvQ22G117JKyojgY56sw1XuRqKvHlxAqQAAAAAAAAAAAAAAAAAAnOrNUa9t2oauksWloq63R7nQ1Csdl+WNV3JycnKqf6OR112o9yIfYf8ZXSW3ezbWZbtWyWzUNvioX1EjqaNyMyyNXLuov1S8UTHaoHk667Ue5EPsP8AjNU2/at6hLdFsLPL6SYS37rsbvSYzjOfs8eZ7NB0eqqO31DNZV8FbVOmzC+HGGswnDg1vbk04Ek667UO48Xsv+IdddqHceL2X/EbbXdJqistsDNHV8FFWJNmV82MLHurw4td247DI2qzbW4rpRyXLUNvlomzsWojajMujRybyJ9UnZntQDz9ddqHceL2X/EOuu1DuPF7L/iK2Sy7Wba1Jda2S26ht8VC6d608bkZlsauXdRfql5JjtUDSaPv2pbna7i+/wBgdbq6nTep2I1dyZFauETiq5ynH/KGS667UO48Xsv+I1Ogbfrejqat+s7tTVsTmNSnZAjfRXK5VcMb+RodSRXSex1kVhnZBcnMxTyyY3WuzzXKL/0BNuuu1DuPF7L/AIjqaY1ZrutvtLTX7SSUlvlcrZaiNrsx8FwvFy8M4ycnyHtm7y23wZ8keQ9s3eW2+DPkgVxVwir6vUSifW20vppPo+h29DvL0fSNdvbueGcO54N1qCPUdRpVY7K+lpb7JHGiyOdmOJ3DfwqtXPaiZTtMB5D2zd5bb4M+SB8uuu1DuPF7L/iPVaNX7Rqm7UNPX6Oip6SWojZPMjXfVxq5Ec77XYmVPH5D2zd5bb4M+SVxM4TPMD+gAAAAAAAAAAAAAAAAAARG/wCkbfU365Tv2sUtE+Wqle6ldO1FgVXqu5/GTly5Jy5FuIZqGHZAt/uS3SqrW161cv0lGpNhJd9d7GG455A3+y60wWi01cVNqmLUTX1G8tRG9HJH6Kejwe7/ADz7TaGJ2Vs0my01iaKlmkpPpH1yzI/O/up/MidmDbAY3ahaoLvZqWGp1PFp1rKlHJUyPRqSLuuTc4vb688+wmfUq2/jHSfuG/PKVtTZpV9lpE1pLNHRfSU6JYUflZN138qKvLJN6G27Gq+tp6Olqa989RK2KNv1yZc5cImVb61A+PUq2/jHSfuG/PHUq2/jHSfuG/PNz5ldF/0tX+5cYmvtuxq311RRVVTXsnp5XRStTplw5q4VMo31oBadO2qnstnpqClmlnjjbxnmkV75VXirlXtz/wCJwPp1hSR12mbhTTXNtrZJFha1y4SHinpZyn/aHG2cX7TNdb3WnS1dUVMNA1PRqGv3mNcq4RFciZTgv+OXqOvrJLW7TFxS/ue22LF/9Cx53kblOWOIEb6lW38Y6T9w3550r7oGjgq2SybT2W2OoiZJFFNLjeTCIr2qsyZaqoqpjhxx2HI6DYp/V1/hP8JQtaWLRdbpa2XXUCVPkugp42U80av3kjejUbvIiZX/AI807QMZNpmimt9LRP2w0CRUzpHMc2ViOXfxnK9Px+zw9WVPvpNAUfkiurF2oNnp/RibWJMnRU795q8V6bG8qcMZT7XacnoNin9XX+E/wlCudh0XY9nLqWubUU+n5pGTvX0+kVzlRWquE3s/ZT/QGC6lW38Y6T9dvzy+t4Ih+feg2Kf1df4T/CfoJMYTHID+gAAAAAAAAAAAAAAAAACc6s2r0+m9Q1dnfY62qdTbmZonJuu3mNd6v7sGMqNoWj6meSoqNnKSzSvV8kj6aNXPcq5VVXd4qqmy1bqDaPQ6hq6bTmnKKstjNzoZ5WOVz8sars/WJycrk5dhx+te1/uhbv03fOA8lr2uWOzxPitWiqmije7ecynYxiOXllURDbt1/E7QS6sS1VXRpJufRMp0n8Tc/wDTJ9a9r/dC3fpu+catLxrRdArcFstN1l38JQ7q9Hu9JjON/wDl4/aAxd02tWW8QshuuiausiY7fayoja9EdyyiKnPip4INf6Qpp456fZx0c0Tkex7KWNFa5Fyiou7wXJ2etW1/uhbvYd84datr/dC3ew75wHz8+NP3YuninuOHUbQNIVM8k9Rs46WaVyvkkfSxq5zlXKqq7vFVU7PWra/3QtvsO+cd3TVftPuVUzyzbLFa6RF9Nz2PfI5P7WtlXj/lU/2A2dXiz19vut1s+km2ZlM3dc5sTGOnVEVyt9FOzhz/AJjO1m2i219LJS1ukq6enlTD4pd1zXJ6lRU4ldrHyx0k76ZiPmbG5Y2ryc7HBPEk3Wva/wB0Ld+m75wHB6+aJ/DWP9rF8Ja6SKiu2nqZklDCtFUU0apSSMRWI1WoqNVMYwnDs7CZda9r/dC3fpu+cVa2yVM1upZa6NIqp8LHTRtTCNeqJvInFeS57QJNp676VvWpYrEmzinp53SPZJJLSxbke4i72V3fyVP84N7tBuNvtOl56u62pt0pGPjR1IrEcjlVyIi4VFThzOvTLc/K9a2pSm8nIyNaRWNVJN70t9HrnC4w3GETn+R4tZVt7oLDNUaZoYq25NexI4JUVWqirx5Ob2fmBHeveivw1j/axfCau0bZaa53aht7dPV8K1dRHAkj3Jus33I3K8OzJ4ute1/uhbv03fOPZZ9TbU57vQw3PS1BDQyVEbKmVjHZZGrkRzk+tXiiZXkoFTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z" alt="Logo IBM">
+    
+            <p>A <span class="highlight"></span> é uma das maiores empresas de tecnologia do mundo, fundada em 1911.</p>
+    
+            <h2>História da IBM</h2>
+            <p>A IBM tem uma longa e notável história de inovações tecnológicas. Desde suas primeiras máquinas de escrever até o desenvolvimento de supercomputadores, a empresa sempre esteve na vanguarda da revolução tecnológica. </p>
+    
+            <h2>Contribuições para a Tecnologia</h2>
+            <p>Entre as contribuições mais notáveis da IBM estão:</p>
+            <ul>
+                <li><strong>Computação Quântica:</strong> A IBM está investindo pesadamente no desenvolvimento de computadores quânticos. Seu sistema IBM Quantum oferece uma plataforma para experimentação e desenvolvimento em computação quântica.</li>
+                <li><strong>Inteligência Artificial (IA):</strong> A IBM é a criadora do Watson, um sistema de IA que ganhou fama mundial ao vencer o programa de TV "Jeopardy!" em 2011. Desde então, o Watson tem sido usado em uma ampla gama de indústrias, desde saúde até finanças.</li>
+                <li><strong>Computação em Nuvem:</strong> A IBM oferece uma robusta plataforma de nuvem híbrida, permitindo que empresas de todos os tamanhos aproveitem a infraestrutura e os serviços em nuvem para impulsionar suas operações.</li>
+            </ul>
 
-    <button class="back-button" onclick="window.history.back();">Voltar</button>
+        
+               
+            <button class="back-button" onclick="window.history.back();">Voltar</button>
+        <head>
+       
 
 </body>
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore o fascinante mundo da tecnologia e descubra como os computadores estão moldando o futuro.">
-    <title>Universo dos Computadores</title>
+    <title>computação quântica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -36,8 +37,7 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            background: linear-gradient(rgba(26, 26, 46, 0.95), rgba(26, 26, 46, 0.95)),
-                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa') center/cover;
+            background: linear-gradient(rgba(26, 26, 46, 0.95), rgba(26, 26, 46, 0.95)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa') center/cover;
         }
 
         .particles {
@@ -65,7 +65,7 @@
             color: transparent;
             text-transform: uppercase;
             letter-spacing: 2px;
-            animation: fadeIn 1s ease-out;
+            animation: fadeIn 1s ease-in-out;
         }
 
         .description {
@@ -74,7 +74,7 @@
             margin: 0 auto 3rem;
             line-height: 1.8;
             color: #e0e0e0;
-            animation: slideUp 1s ease-out 0.5s both;
+            animation: slideUp 1s ease-in-out 0.5s both;
         }
 
         .cta-button {
@@ -88,7 +88,8 @@
             border-radius: 50px;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
-            animation: slideUp 1s ease-out 0.7s both;
+            animation: slideUp 1s ease-in-out 0.7s both;
+            margin-right: 10px; /* Adicionei um espaçamento entre os botões */
         }
 
         .cta-button:hover {
@@ -100,6 +101,7 @@
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
@@ -110,6 +112,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -120,10 +123,12 @@
             h1 {
                 font-size: 2.5rem;
             }
+
             .description {
                 font-size: 1.1rem;
                 padding: 0 1rem;
             }
+
             .cta-button {
                 padding: 0.9rem 2rem;
             }
@@ -166,7 +171,8 @@
 
         /* Estilos do Modal */
         .modal {
-            display: none; /* Oculto por padrão */
+            display: none;
+            /* Oculto por padrão */
             position: fixed;
             z-index: 1000;
             left: 0;
@@ -194,7 +200,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('URL_DO_SEU_GIF_AQUI') no-repeat center center;
+            background: url('URL_DO_SEU_GIF_AQUI') center center no-repeat;
             background-size: cover;
             opacity: 0.5;
             z-index: 0;
@@ -240,30 +246,45 @@
 
         .voltar-button {
             display: inline-block;
-            margin: 20px auto; /* Centraliza o botão */
-            padding: 10px 20px; /* Espaçamento interno */
-            background-color: #007bff; /* Cor de fundo */
-            color: white; /* Cor do texto */
-            text-align: center; /* Centraliza o texto */
-            border-radius: 5px; /* Bordas arredondadas */
-            text-decoration: none; /* Remove o sublinhado */
-            font-size: 1.2rem; /* Tamanho da fonte */
-            transition: background-color 0.3s, transform 0.3s; /* Transição suave */
-            animation: pulse 2s infinite; /* Animação de pulsar */
+            margin: 20px auto;
+            /* Centraliza o botão */
+            padding: 10px 20px;
+            /* Espaçamento interno */
+            background-color: #007bff;
+            /* Cor de fundo */
+            color: white;
+            /* Cor do texto */
+            text-align: center;
+            /* Centraliza o texto */
+            border-radius: 5px;
+            /* Bordas arredondadas */
+            text-decoration: none;
+            /* Remover o sublinhado */
+            font-size: 1.2rem;
+            /* Tamanho da fonte */
+            transition: background-color 0.3s, transform 0.3s;
+            /* Transição suave */
+            animation: pulse 2s infinite;
+            /* Animação de pulsar */
         }
 
         .voltar-button:hover {
-            background-color: #0056b3; /* Cor ao passar o mouse */
-            transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+            background-color: #0056b3;
+            /* Cor ao passar o mouse */
+            transform: scale(1.05);
+            /* Aumenta o tamanho ao passar o mouse */
         }
 
         @keyframes pulse {
             0% {
                 transform: scale(1);
             }
+
             50% {
-                transform: scale(1.1); /* Aumenta o tamanho no meio da animação */
+                transform: scale(1.1);
+                /* Aumenta o tamanho no meio da animação */
             }
+
             100% {
                 transform: scale(1);
             }
@@ -277,126 +298,102 @@
         }
 
         .contact-info {
-            text-align: center; /* Centraliza o texto */
-            margin-top: 40px; /* Espaçamento acima das informações de contato */
-            font-size: 1.2rem; /* Tamanho da fonte */
-            color: #333; /* Cor do texto */
+            text-align: center;
+            /* Centraliza o texto */
+            margin-top: 40px;
+            /* Espaçamento acima das informações de contato */
+            font-size: 1.2rem;
+            /* Tamanho da fonte */
+            color: #333;
+            /* Cor do texto */
         }
 
         .second-page {
-            background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjc4bXBoaWxnZ2pkbGhpd2cybHFnZG51bmx6dDA2bHQ0Zjd4cXdkZSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/n1dFDLwXu4Qkwy7OJ0/giphy.gif');
+            background-image: url('https://fonts.googleapis.com');
             background-size: cover;
             background-position: center;
-            background-repeat: no-repeat; /* Evita que o GIF se repita */
-            height: 100vh; /* Define a altura da página */
-            width: 100%; /* Define a largura da página */
+            background-repeat: no-repeat;
+            /* Evite que o GIF seja repetido */
+            height: 100vh;
+            /* Define a altura da página */
+            width: 100%;
+            /* Define a largura da página */
         }
 
         .button-container {
-            background-image: url("https://media.giphy.com/media/35A1ZpBwJctGM/giphy.gif?cid=ecf05e47voinz038n0m4yjgudjvwqd34dfx6hp499mgk69ep&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+            background-image: url("https://i.gifer.com/FQ1M.gif");
             background-size: cover;
-            padding: 20px; /* Ajuste o padding conforme necessário */
-            border-radius: 10px; /* Para bordas arredondadas */
+            padding: 20px;
+            /* Ajuste o preenchimento conforme necessário */
+            border-radius: 10px;
+            /* Para bordas arredondadas */
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
     </style>
 </head>
+
 <body>
     <div class="hero">
         <div class="particles" id="particles-js"></div>
         <div class="content">
             <h1>O Universo Digital</h1>
-            <p class="description">
-                Explore o fascinante mundo da tecnologia e descubra como os computadores 
-                estão moldando o futuro. Uma jornada através da inovação, criatividade 
-                e possibilidades infinitas.
-            </p>
-            <a href="/robo.html" class="cta-button" id="openModal">Tecnologia dos Computadores e dos Robôs</a>
+            <p class="description">A computação quântica é a ciência que estuda as aplicações das teorias e propriedades da mecânica quântica na Ciência da Computação</p>
+            <a href="/robo.html" class="cta-button" id="openModal">IBM</a>
+            <a href="https://learn.microsoft.com/pt-pt/azure/quantum/overview-understanding-quantum-computing" class="cta-button" id="ibmButton">computação quântica.1</a>
+
             <div class="social-buttons">
+              
                 <a href="https://www.instagram.com/miguel_dala23/" target="_blank" class="btn">Instagram</a>
                 <a href="https://github.com/MiguelDala" target="_blank" class="btn">GitHub</a>
-                <a href="https://cbvr.com.br/post/a-ascensao-das-maquinas-o-futuro-da-inteligencia-artificial-e-o-impacto-na-humanidade/" target="_blank" class="btn">Conheça Mais</a>
+                <a href="https://www.ibm.com/br-pt/topics/quantum-computing" target="_blank" class="btn">Conheça Mais</a>
             </div>
         </div>
     </div>
-
     <h2>Conheça mais</h2>
-
     <div style="text-align: center; margin: 20px auto;">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/cpraXaw7dyc" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
+        <img src="https://www.totvs.com/wp-content/uploads/2024/01/inteligencia-artificial.jpg" width="560" height="315" alt="Imagem de Inteligência Artificial">
     </div>
-
     <div class="container">
-
-
-    <div class="contact-info">
-        <p>nº +351 962 275 607</p>
-        <p>Email: Miguelxiaquitangue@epfundao.edu.pt</p>
-    </div>
-
- 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        // Script para abrir e fechar o modal
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("openModal");
-        var cardContainer = document.getElementById("cardContainer");
-
-        btn.onclick = function() {
-            modal.style.display = "block";
-            cardContainer.style.backgroundImage = "url('URL_DO_SEU_NOVO_GIF_AQUI')"; // Altera o fundo do card
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        <div class="contact-info">
+            <p>nº +351 962 275 607</p>
+            <p>E-mail: Miguelxiaquitangue@epfundao.edu.pt</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script>
+            // Script para abrir e fechar o modal
+            var modal = document.getElementById("meuModal");
+            var btn = document.getElementById("openModal");
+            var cardContainer = document.getElementById("cardContainer");
+            btn.onclick = function () {
+                modal.style.display = "block";
+                cardContainer.style.backgroundImage = "url('URL_DO_SEU_NOVO_GIF_AQUI')";
+                // Alterar o fundo do cartão
             }
-        }
-
-        particlesJS("particles-js", {
-            particles: {
-                number: { value: 100 },
-                color: { value: "#8f94fb" },
-                shape: { type: "circle" },
-                opacity: {
-                    value: 0.6,
-                    
-
-                    
-
-                },
-                size: {
-                    value: 3,
-                    random: true
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#4e54c8",
-                    opacity: 0.4,
-                    width: 1
-                },
-                move: {
-                    enable: true,
-                    speed: 1.5,
-                    direction: "none",
-                    random: true,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
                 }
             }
-        });
-    </script>
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 100 },
+                    color: { value: "#8f94fb" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.6, },
+                    size: { value: 3, random: true },
+                    line_linked: { enable: true, distance: 150, color: "#4e54c8", opacity: 0.4, width: 1 },
+                    move: { enable: true, speed: 1.5, direction: "none", random: true, straight: false, out_mode: "out", bounce: false }
+                }
+            });
+        </script>
+                 
+                <img src="https://www.ibm.com/images/portal/Dream_Quantum_Computer.jpg" alt="IBM Quantum Computer" class="ibm-image">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
